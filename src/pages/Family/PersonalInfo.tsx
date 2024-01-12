@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useOtherUser } from "../../hooks/useUserID";
-import { iProps } from "./familyProps";
+import { iProps } from "./FamilyProps";
 
 const PersonalInfo: FC<iProps> = ({ props, user }) => {
   const { otherUser }: any = useOtherUser(props?._id);

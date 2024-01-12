@@ -7,7 +7,7 @@ import PrivateRouter from "./privateRouter";
 import Upgrade from "../pages/Pay/Upgrade";
 import RegisterCard from "../pages/auth/RegisterCard";
 import AuthLayout from "../components/layout/AuthLayout";
-import ViewFamily from "../pages/family/ViewFamily";
+import ViewFamily from "../pages/Family/ViewFamily";
 import SettingScreen from "../pages/settings/Setting";
 import PersonalInfoScreen from "../pages/settings/PersonalInfoScreen";
 import PersonalSetting from "../pages/settings/PersonalSetting";
@@ -15,10 +15,12 @@ import ProfressionInfoScreen from "../pages/settings/PrefessionalInfoScreen";
 import HospitalChice from "../pages/settings/HospitalChice";
 import Appoinments from "../pages/appiontment/Appoinments";
 import HistoryScreen from "../pages/history/HistoryScreen";
+import LandingLayout from "../components/layout/LandingLayout";
+import LandHomeScreen from "../pages/LandingPage/LandHomeScreen";
 
 export const mainRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/dashboard",
     element: (
       <PrivateRouter>
         <Layout />
@@ -98,4 +100,14 @@ export const mainRouter = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/",
+    element: <LandingLayout/>,
+    children: [
+      {
+        index: true,
+        element: <LandHomeScreen/>
+      }
+    ]
+  }
 ]);
