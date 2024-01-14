@@ -17,7 +17,7 @@ const Trusted = () => {
         <div className='bg-gray-600 h-[50px]'></div>
       </div>
     </div>
-    <div className='w-full min-h-[200px] grid grid-cols-1 md:grid-cols-2 py-10'>
+    <div className='w-full min-h-[200px] grid grid-cols-1 md:grid-cols-2 py-10 gap-4'>
   <div className=''>
     <h1 className='text-2xl md:text-3xl lg:text-[50px] font-semibold mb-6'>
       We Automate Health Requests

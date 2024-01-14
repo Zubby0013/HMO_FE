@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
     <div className='w-full min-h-[90vh] bg-[#f3f5fc] grid grid-cols-1 lg:grid-cols-2'>
-  <div className='flex justify-center items-center lg:mt-20 p-4 lg:p-0 gap-6'>
+  <div className='flex justify-center items-center lg:mt-20 p-4 lg:p-0 '>
     <div className='w-full max-w-[500px] lg:w-[400px] mx-auto'>
       <h1 className='text-center lg:text-start text-4xl font-semibold'>
         Approval and Ticketing lifecycle in HMO
