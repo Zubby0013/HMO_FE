@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from './Hero';
 
 const LandHomeScreen = () => {
   return (
-    <div>LandHomeScreen</div>
+    <div>
+      <Hero/>
+    </div>
   )
 }
 
-export default LandHomeScreen
+export default LandHomeScreen;

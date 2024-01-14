@@ -1,7 +1,6 @@
 import { FC } from "react";
 import pic from "../../assets/pix.jpg";
 import PersonalInfo from "./PersonalInfo";
-
 export interface iProps {
   props: any;
   user?: any;
