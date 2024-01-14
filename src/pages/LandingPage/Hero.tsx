@@ -25,7 +25,10 @@ const Hero = () => {
       </div>
     </div>
   </div>
-  <div className='bg-green-500'></div>
+  <div className='bg-green-500'>
+    <img src="" alt="" />
+    <img src="" alt="" />
+  </div>
 </div>
 
     </>

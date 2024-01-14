@@ -31,7 +31,7 @@ window.addEventListener("scroll", headerChange);
               <button className=' w-[80px] h-[40px]'>Login</button>
               </Link>
               <Link to='/register'>
-              <button className=' w-[130px] h-[40px] bg-[#3b82f6] rounded-lg'>Register</button>
+              <button className=' w-[130px] h-[40px] bg-[#3b82f6] rounded-lg text-white'>Register</button>
               </Link>
             </div>
             <div className=' w-[50px] lg:hidden'>
@@ -40,7 +40,7 @@ window.addEventListener("scroll", headerChange);
         </div>
     </div>
       ):(
-        <div className=' w-full h-[70px] flex justify-center items-center fixed bg-white shadow-md'>
+        <div className=' w-full h-[70px] flex justify-center items-center fixed bg-white shadow-md z-10'>
         <div className=' w-[95%] h-[90%] flex justify-between items-center'>
             <div className=' w-[150px] lg:w-[200px] bg-green-400 '>Logo</div>
             <div className=' w-[380px] hidden lg:flex justify-between items-center text-[18px] font-[400] cursor-pointer'>
@@ -54,7 +54,7 @@ window.addEventListener("scroll", headerChange);
               <button className=' w-[80px] h-[40px]'>Login</button>
               </Link>
               <Link to='/register'>
-              <button className=' w-[130px] h-[40px] bg-[#3b82f6] rounded-lg'>Register</button>
+              <button className=' w-[130px] h-[40px] bg-[#3b82f6] rounded-lg text-white'>Register</button>
               </Link>
             </div>
             <div className=' w-[50px] lg:hidden'>
