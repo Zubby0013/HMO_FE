@@ -3,7 +3,7 @@ import Header from "../static/Header";
 import Sider from "../static/Sider";
 import { useDispatch, useSelector } from "react-redux";
 import { changeToggleToFalse } from "../../global/reduxState";
-import AddMember from "../../pages/family/AddMember";
+import AddMember from "../../pages/Family/AddMember";
 
 const Layout = () => {
   const memberState = useSelector((state: any) => state.memberToggle);

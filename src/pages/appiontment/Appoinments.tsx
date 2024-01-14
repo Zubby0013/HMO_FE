@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LittleHeader from "../../components/layout/LittleHeader";
 import moment from "moment";
 import { useUser, useUserID } from "../../hooks/useUserID";
@@ -20,8 +20,25 @@ const Appoinments = () => {
 
   const [state1, setState1] = useState<string>("");
   const [reason, setReason] = useState<string>("");
+  const [num, setNum] = useState<boolean>(false);
 
   const [startDateTime, setStartDateTime] = useState<any>();
+
+  useEffect(() => {
+    const addNumber = setTimeout(() => {
+      setNum(true);
+
+      // clearTimeout(addNumber);
+    }, 10000);
+  }, [!!reason]);
+  console.log(num);
+  console.log(reason);
+
+  const delayedText = () => {
+    if (reason.length > 0 && num) {
+      return reason;
+    }
+  };
 
   return (
     <div>
@@ -151,7 +168,7 @@ const Appoinments = () => {
                 <span className="text-[13px] font-medium ">
                   Reason for Appointment:
                 </span>{" "}
-                <div className="text-[13px] font-normal ">{reason}</div>
+                <div className="text-[13px] font-normal ">{delayedText()}</div>
               </p>
             </div>
           ) : (
