@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="w-full bg-gray-50 min-h-[40vh] flex justify-center">
-      <div className="w-[80%] py-20">
+      <div className="w-[95%] py-20">
         <div className="flex lg:justify-between w-full gap-10 justify-center h-full flex-wrap ">
           <div className="flex flex-col  gap-10">
             <div className="text-[24px] font-bold text-center lg:text-start">
