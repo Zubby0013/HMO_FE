@@ -33,7 +33,7 @@ export const Price = () => {
               <Button
                 name="Register"
                 icon={<RiRegisteredFill />}
-                className="bg-sky-600 m-0 mt-3 "
+                className="bg-[#3b82f6] m-0 mt-3 "
               />
               <Button
                 name="Schedule A Demo"
