@@ -32,6 +32,7 @@ const Trusted = () => {
           </div>
         </div>
         <Cards />
+
       </div>
     </div>
   );
