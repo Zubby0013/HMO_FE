@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LittleHeader from "../../components/layout/LittleHeader";
 import moment from "moment";
 import { useUser, useUserID } from "../../hooks/useUserID";
@@ -8,6 +8,7 @@ import DateTimePicker from "react-datetime-picker";
 import "react-datetime-picker/dist/DateTimePicker.css";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import { DebouncedFunc, debounce } from "lodash";
 
 type ValuePiece = Date | null;
 
@@ -20,26 +21,20 @@ const Appoinments = () => {
 
   const [state1, setState1] = useState<string>("");
   const [reason, setReason] = useState<string>("");
-  const [num, setNum] = useState<boolean>(false);
+  const [reasonOutput, setReasonOutput] = useState<boolean>(false);
 
   const [startDateTime, setStartDateTime] = useState<any>();
 
+<<<<<<< HEAD
+=======
+  const ref: DebouncedFunc<(value: any) => void> = useRef(
+    debounce((value) => setReasonOutput(value), 5000)
+  ).current;
+>>>>>>> 63bc6f3a714d6d7750355cae1a44f84f6bcfcbd8
 
   useEffect(() => {
-    const addNumber = setTimeout(() => {
-      setNum(true);
-
-      // clearTimeout(addNumber);
-    }, 10000);
-  }, [!!reason]);
-  console.log(num);
-  console.log(reason);
-
-  const delayedText = () => {
-    if (reason.length > 0 && num) {
-      return reason;
-    }
-  };
+    ref(reason);
+  }, [reason, ref]);
 
   return (
     <div>
@@ -169,7 +164,7 @@ const Appoinments = () => {
                 <span className="text-[13px] font-medium ">
                   Reason for Appointment:
                 </span>{" "}
-                <div className="text-[13px] font-normal ">{delayedText()}</div>
+                <div className="text-[13px] font-normal ">{reasonOutput}</div>
               </p>
             </div>
           ) : (
