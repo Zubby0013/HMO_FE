@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import bg from '../../assets/63902f1c487649aaab6ac17b_shape-07.svg';
+import pix from '../../assets/63902f1c4876496f546ac1a4_illustr_ticket-02-p-800.png';
 
 const Hero = () => {
   return (
     <>
-    <div className='w-full min-h-[90vh] bg-[#f3f5fc] grid grid-cols-1 lg:grid-cols-2'>
-  <div className='flex justify-center items-center lg:mt-20 p-4 lg:p-0 '>
+    <div className='w-full min-h-[90vh] bg-[#f3f5fc] grid grid-cols-1 lg:grid-cols-2 py-10'>
+  <div className='flex justify-center items-center lg:mt-16 p-4 lg:p-0 '>
     <div className='w-full max-w-[500px] lg:w-[400px] mx-auto'>
       <h1 className='text-center lg:text-start text-4xl font-semibold'>
         Approval and Ticketing lifecycle in HMO
@@ -25,9 +27,9 @@ const Hero = () => {
       </div>
     </div>
   </div>
-  <div className='bg-green-500'>
-    <img src="" alt="" />
-    <img src="" alt="" />
+  <div className=''>
+       <img src={bg} alt="" className=" object-contain w-[90%]"/>
+        <img src={pix} alt="" className=" absolute top-28  bottom-0 w-[450px] animate-pulse rounded-lg"/>
   </div>
 </div>
 
