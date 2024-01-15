@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './Cards';
+import codelab from '../../assets/CodeLab Best Logo.png';
 
 const Trusted = () => {
   return (
@@ -9,12 +10,22 @@ const Trusted = () => {
       <h1 className='text-center text-2xl md:text-3xl lg:text-3xl font-semibold'>
         Trusted By Global Companies:
       </h1>
-      <div className='w-full h-[80px] py-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4'>
-        <div className='bg-gray-600 h-[50px]'></div>
-        <div className='bg-green-600 h-[50px]'></div>
-        <div className='bg-gray-600 h-[50px]'></div>
-        <div className='bg-lime-600 h-[50px]'></div>
-        <div className='bg-gray-600 h-[50px]'></div>
+      <div className='w-full  py-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4'>
+        <div className=''>
+          <img src={codelab} alt="" className=' object-contain w-auto h-auto'/>
+        </div>
+        <div className=' h-[50px]'>
+          <img src={codelab} alt="" className=' object-contain w-auto h-auto'/>
+        </div>
+        <div className=' h-[50px]'>
+          <img src={codelab} alt="" className=' object-contain w-auto h-auto'/>
+        </div>
+        <div className=' h-[50px]'>
+          <img src={codelab} alt="" className=' object-contain lg:object-cover w-auto h-auto'/>
+        </div>
+        <div className=' h-[50px]'>
+          <img src={codelab} alt="" className=' object-contain w-auto h-auto'/>
+        </div>
       </div>
     </div>
     <div className='w-full min-h-[200px] grid grid-cols-1 md:grid-cols-2 py-10 gap-4 justify-between'>

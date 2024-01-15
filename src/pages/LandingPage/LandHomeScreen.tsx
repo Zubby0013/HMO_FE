@@ -23,7 +23,7 @@ const LandHomeScreen = () => {
         </div>
       </div>
       <div className="w-[60%]">
-        {/* <Price /> */}
+        <Price />
       </div>
       <Footer />
     </div>

@@ -1,8 +1,8 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import Button from "../../components/reUse/Button";
 import { RiRegisteredFill } from "react-icons/ri";
-import dashboard from "../../assets/63902f1c48764912786ac181_illustr-free-p-800.png";
-import bg from "../../assets/63902f1c48764924db6ac172_shape-02.svg";
+import dashboard from "../../assets/box.png";
+import bg from "../../assets/63902f1c487649aaab6ac17b_shape-07.svg";
 
 export const Price = () => {
   return (

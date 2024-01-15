@@ -16,8 +16,8 @@ const Create = () => {
             </div>
             <div className=' w-full min-h-[400px] grid grid-cols-1 lg:grid-cols-2'>
                <div className="relative flex items-center mb-16 lg:mb-0">
-                 <img src={bg} alt="" className=" object-contain w-[90%]"/>
-                 <img src={pix} alt="" className=" absolute top-14 left-8 bottom-0 w-[450px] animate-pulse rounded-lg"/>
+                 <img src={bg} alt="" className=" object-contain w-auto"/>
+                 <img src={pix} alt="" className=" absolute top-14 left-8 bottom-0 w-[400px] lg:w-[450px] animate-pulse rounded-lg"/>
                </div>
                <div className=" flex items-center">
                   <div className=" w-full h-[80%] flex items-center justify-center lg:items-start lg:justify-start flex-col">
